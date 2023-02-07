@@ -2,6 +2,8 @@
 
 A simple graphical user interface (GUI) that allows the user to select an image and generate a new one with rounded corners. The rounded corner image is then saved in the same directory as the original one.
 
+<img src="thumbnail.png" width="50%" height="50%">
+
 ## Requirements
 
 - Python 3
