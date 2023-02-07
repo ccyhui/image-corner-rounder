@@ -31,4 +31,6 @@ python round_corners_gui.py
 
 ## Note
 
-This code is provided as-is and without any warranties. The user is responsible for ensuring that the code meets their needs and for any consequences of using it.
+- When saving the image with rounded corners, this program compulsorily utilizes PNG format instead of JPG. This is due to the fact that JPG does not have the capability to preserve transparent backgrounds, and using it may cause the program to stop functioning.
+
+- This code is provided as-is and without any warranties. The user is responsible for ensuring that the code meets their needs and for any consequences of using it.
