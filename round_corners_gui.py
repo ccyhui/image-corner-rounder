@@ -21,10 +21,10 @@ class ImageCornerRounder:
         draw = ImageDraw.Draw(mask)
         draw.rounded_rectangle(((0, 0), self.image.size), self.radius, fill = 255)
         self.image.putalpha(mask)
-        self.directory_path = os.path.dirname(self.path)
-        self.rounded_corner_image_name = "rounded_" + os.path.basename(self.path)
-        save_path = os.path.join(self.directory_path, self.rounded_corner_image_name)
-        self.image.save(save_path)
+        directory_path = os.path.dirname(self.path)
+        save_name = "rounded.png"
+        save_path = os.path.join(directory_path, save_name)
+        self.image.save(save_path, "PNG")
         message = "Rounded corner image saved successfully"
         messagebox.showinfo(title = "Selected File", message = message)
         root.destroy()
